@@ -1,0 +1,2 @@
+setxkbmap us
+notify-send "Keyboard set to US"
