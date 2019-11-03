@@ -1,5 +1,5 @@
 #set wallpaper
-bash /home/jake/.scripts/wallpaperinit
+bash ~/.scripts/wallpaperinit
 
 #set caps to esc
-bash /home/jake/.scripts/capstoesc
+bash ~/.scripts/capstoesc
