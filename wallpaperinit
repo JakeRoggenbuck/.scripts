@@ -1,1 +1,1 @@
-feh --bg-fill --randomize ~/.wallpaper
+feh --bg-fill --randomize $HOME/.wallpaper
