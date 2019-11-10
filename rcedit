@@ -1,0 +1,9 @@
+dotfilenames=( "bashrc\nbspwmrc\nsxhkdrc" )
+
+declare -A dotfiles=( ["bashrc"]="$HOME/.bashrc" ["bspwmrc"]="$HOME/.config/bspwm/bspwmrc" ["sxhkdrc"]="$HOME/.config/sxhkd/sxhkdrc" )
+choice=$(echo -e ${dotfilenames[@]} | dmenu -i -p 'Config Files: ')
+
+file=${dotfiles[${choice[@]}]}
+
+notify-send "Opened" $file
+nvim $file
