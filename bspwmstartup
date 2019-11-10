@@ -3,3 +3,6 @@ bash $HOME/.scripts/wallpaperinit
 
 #set caps to esc
 bash $HOME/.scripts/capstoesc
+
+#welcome message and battery level
+bash $HOME/.scripts/welcomemessage
