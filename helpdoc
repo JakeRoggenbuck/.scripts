@@ -1,0 +1,8 @@
+dotfilenames=( "vim" )
+
+declare -A dotfiles=( [vim]="$HOME/Resources/VimCommands/vim.ms.pdf" )
+choice=$(echo -e ${dotfilenames[@]} | dmenu -i -p 'Config Files: ')
+
+file=${dotfiles[${choice[@]}]}
+
+mupdf $file
