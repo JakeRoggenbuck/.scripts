@@ -1,0 +1,11 @@
+bat=$(acpi -i | grep des | sed 's/.*= // ; s/%//')
+
+echo $bat
+
+if [ $bat > 20 ]
+then 
+	notify-send -u normal "$bat"
+else
+	notify-send -u critical "$bat"
+fi
+
