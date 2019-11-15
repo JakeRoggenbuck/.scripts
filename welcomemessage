@@ -1,5 +1,0 @@
-bat="upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep percentage:"
-eval $bat
-batLevel=$(eval "$bat")
-
-notify-send "Welcome back $batLevel"

@@ -5,4 +5,4 @@ bash $HOME/.scripts/wallpaperinit
 bash $HOME/.scripts/capstoesc
 
 #welcome message and battery level
-bash $HOME/.scripts/welcomemessage
+bash $HOME/.scripts/batterychecker
