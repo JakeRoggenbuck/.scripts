@@ -1,11 +1,11 @@
-bat=$(acpi -i | grep des | sed 's/.*= // ; s/%//')
+while true
+do
+        bat=$(acpi -i | grep Dis | sed 's/[^,]*, // ; s/%.*//')
 
-echo $bat
-
-if [ $bat > 20 ]
-then 
-	notify-send -u normal "$bat"
-else
-	notify-send -u critical "$bat"
-fi
-
+        if [ $bat -lt 20 ]
+        then
+                notify-send -u critical "$bat"
+        fi
+        echo $bat
+        sleep 300
+done
