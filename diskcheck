@@ -1,0 +1,2 @@
+disk=$(df -h | grep sda5 | awk '{print $5, "Used,", $3, "of", $2}')
+notify-send "$disk"
