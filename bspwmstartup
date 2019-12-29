@@ -6,3 +6,6 @@ bash $HOME/.scripts/capstoesc
 
 #welcome message and battery level
 bash $HOME/.scripts/batterychecker &
+
+#set wmname for pycharm
+wmname LG3D
