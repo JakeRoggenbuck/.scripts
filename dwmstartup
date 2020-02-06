@@ -1,3 +1,8 @@
+# dwm Startup script
+
+sxhkd &
+compton &
+
 #set wallpaper
 bash $HOME/.scripts/wallpaperinit
 
@@ -7,5 +12,3 @@ bash $HOME/.scripts/capstoesc
 #welcome message and battery level
 bash $HOME/.scripts/batterychecker &
 
-#set wmname for pycharm
-wmname LG3D
