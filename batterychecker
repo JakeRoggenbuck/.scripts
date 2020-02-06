@@ -1,6 +1,6 @@
 while true
 do
-        bat=$(acpi -i | grep harging | sed 's/[^,]*, // ; s/%.*//')
+        bat=$(acpi -i | grep charging | sed 's/[^,]*, // ; s/%.*//')
 
         if [ $bat -lt 20 ]
         then
