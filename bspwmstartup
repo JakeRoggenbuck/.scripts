@@ -1,5 +1,6 @@
 #set wallpaper
 bash $HOME/.scripts/wallpaperinit
+#bash $HOME/.scripts/batterybackground &
 
 #set caps to esc
 bash $HOME/.scripts/capstoesc

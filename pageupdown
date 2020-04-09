@@ -1,0 +1,2 @@
+setxkbmap -option Prior:swapcaps
+setxkbmap -option PgUp:~
