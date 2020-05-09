@@ -1,0 +1,3 @@
+file=$(ls $HOME/.wallpaper*)
+filename=$(basename -- $file"")
+feh --bg-fill $HOME/$filename
