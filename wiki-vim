@@ -1,0 +1,3 @@
+echo -n "Wiki url: " 
+read page
+w3m -dump $page > /tmp/wiki && vim /tmp/wiki
