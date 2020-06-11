@@ -1,3 +1,3 @@
-echo -n "Wiki url: " 
+echo -n "Wiki search: " 
 read page
-w3m -dump $page > /tmp/wiki && vim /tmp/wiki
+w3m -dump https://en.wikipedia.org/wiki/Special:Search?search=$page > /tmp/wiki && vim /tmp/wiki
