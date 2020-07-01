@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 feh --bg-fill ~/Downloads/windumb.jpg &
 pkill polybar &
 feh ~/Downloads/notepad.png && bspc node -t floating &

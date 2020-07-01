@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 dotfilenames=( "vim" )
 
 declare -A dotfiles=( [vim]="$HOME/Resources/VimCommands/vim.ms.pdf" )

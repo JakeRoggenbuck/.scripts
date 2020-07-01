@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 while true
 do
         bat=$(acpi -i | grep harging | sed 's/[^,]*, // ; s/%.*//')

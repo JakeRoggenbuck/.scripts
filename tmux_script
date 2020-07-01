@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 tmux new-session -d 'vim'
 tmux split-window -v 'ipython'
 tmux split-window -h

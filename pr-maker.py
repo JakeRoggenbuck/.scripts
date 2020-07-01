@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 repo = "Server"
 upstream = "https://github.com/frc1678/server-2020/"
 text = input("PR name & number: ")

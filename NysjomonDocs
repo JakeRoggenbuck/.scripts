@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 docnames=( "Dictionary\nLearnersGuide\nNysjomon" )
 
 declare -A docs=( [Dictionary]="$HOME/Resources/Nysjomon/Dictionary" [Dictionary]="$HOME/Resources/Nysjomon/LearnersGuide" [Nysjomon]="$HOME/Resources/Nysjomon/Nysjomon")
