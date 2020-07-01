@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # dwm Startup script
 
 sxhkd &
