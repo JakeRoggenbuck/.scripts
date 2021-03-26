@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-protonvpn status | grep 'Status:' | awk '{print $2}'
-echo "IP is "$(protonvpn status | grep 'Country' | awk '{print $2}') $(protonvpn status | grep 'IP' | awk '{print $2}')
