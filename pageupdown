@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-setxkbmap -option Prior:swapcaps
-setxkbmap -option PgUp:~
