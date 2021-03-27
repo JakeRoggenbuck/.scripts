@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [ "$1" == "us" ]; then
+	setxkbmap us && notify-send "Keyboard set to US"
+elif [ "$1" == "dvorak" ]; then
+	setxkbmap dvorak && notify-send "Keyboard set to Dvorak"
+else
+	echo "Needs args: us or dvorak"
+fi

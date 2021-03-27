@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Inspired by script from https://github.com/jishnusen/dots
 
 if [ "$1" == "p" ]; then
@@ -8,4 +9,10 @@ elif [ "$1" == "n" ]; then
     dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next > /dev/null 2>&1 && echo "next"
 elif [ "$1" == "r" ]; then
     dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous > /dev/null 2>&1 && echo "previous"
+else
+	echo "Needs args!"
+	echo "p for play/pause"
+	echo "s for stop"
+	echo "n for next"
+	echo "b for back"
 fi

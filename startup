@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+bspwm () {
+	# Set wrokspaces
+	bspc monitor $(bspc query -M --names | head -n 1) -d 1 2 3 4 5 6 7 8 9 10
+
+	bash $SCRIPTS/wallpaperinit
+	bash $SCRIPTS/capstoesc
+
+	# Set wmname for pycharm and other things
+	wmname LG3D
+}
+
+dwm () {
+	sxhkd &
+	compton &
+
+	bash $SCRIPTS/wallpaperinit
+	bash $SCRIPTS/capstoesc
+}
+
+sowm () {
+	compton &
+	dunst &
+	xscreensaver &
+	redshift -P -O 3500 &
+
+	bash $SCRIPTS/wallpaperinit
+	bash $SCRIPTS/capstoesc
+}
+
+
+if [ "$1" == "bspwm" ]; then
+	bspwm
+elif [ "$1" == "dwm" ]; then
+	dwm
+elif [ "$1" == "sowm" ]; then
+	sowm
+fi

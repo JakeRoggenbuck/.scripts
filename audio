@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+if [ "$1" == "up" ]; then
+	amixer set Master 5%+
+elif [ "$1" == "down" ]; then
+	amixer set Master 5%-
+else
+	echo "Needs args: up or down"
+fi
