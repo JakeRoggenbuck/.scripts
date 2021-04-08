@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if [ "$1" == "caps" ]; then
+	setxkbmap -option caps:swapescape
+else
+	setxkbmap -option
+fi
