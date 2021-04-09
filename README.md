@@ -1,4 +1,4 @@
-# .scripts version 0.1
+# .scripts version 0.2
 
 ## TODO
 - Add description or comments on each script at the beginning
