@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
+
+# DEPRICATED
+
 setxkbmap us
 notify-send "Keyboard set to US"

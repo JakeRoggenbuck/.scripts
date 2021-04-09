@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+
+# DEPRICATED
+
 #set wrokspaces
 bspc monitor $(bspc query -M --names | head -n 1) -d 1 2 3 4 5 6 7 8 9 10
 

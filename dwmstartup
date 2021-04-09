@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # dwm Startup script
 
+# DEPRICATED
+
 sxhkd &
 compton &
 
@@ -12,4 +14,3 @@ bash $HOME/.scripts/capstoesc
 
 #welcome message and battery level
 bash $HOME/.scripts/batterychecker &
-

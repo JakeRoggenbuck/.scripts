@@ -1,2 +1,0 @@
-#!/usr/bin/env bash
-echo "vpn "$(protonvpn status | grep 'Status:' | awk '{print $2}') | festival --tts
