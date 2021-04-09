@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-# DEPRICATED
-
-setxkbmap dvorak
-notify-send "Keyboard set to Dvorak"

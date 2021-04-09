@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-# DEPRICATED
-
-amixer set Master 5%-
