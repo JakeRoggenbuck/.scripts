@@ -2,7 +2,7 @@
 import sys
 
 repo = "Server"
-upstream = "https://github.com/frc1678/server-2020/"
+upstream = "https://github.com/frc1678/server/"
 
 if len(sys.argv) > 1:
     text = " ".join(sys.argv[1:])
@@ -10,4 +10,4 @@ else:
     text = input("PR name & number: ")
 
 new = text.split('#')
-print(f'{repo} PR#{new[1].rstrip()} `{new[0].rstrip().lstrip()}` {upstream}pull/{new[1]}')
+print(f'{repo} PR #{new[1].rstrip()} `{new[0].rstrip().lstrip()}` {upstream}pull/{new[1]}')
