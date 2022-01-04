@@ -6,7 +6,7 @@ bspwm () {
 	sh $SCRIPTS/new-monit-setup
 
 	bash $SCRIPTS/wallpaperinit
-	bash $SCRIPTS/capstoesc
+	bash $SCRIPTS/swap caps
 
 	# Set wmname for pycharm and other things
 	wmname LG3D
@@ -17,7 +17,7 @@ dwm () {
 	compton &
 
 	bash $SCRIPTS/wallpaperinit
-	bash $SCRIPTS/capstoesc
+	bash $SCRIPTS/swap caps
 }
 
 sowm () {
@@ -27,7 +27,7 @@ sowm () {
 	redshift -P -O 3500 &
 
 	bash $SCRIPTS/wallpaperinit
-	bash $SCRIPTS/capstoesc
+	bash $SCRIPTS/swap caps
 }
 
 
