@@ -1,0 +1,4 @@
+#!/bin/sh
+
+xrandr --output HDMI-1 --rotate left
+xrandr --output DP-3 --primary
