@@ -5,7 +5,7 @@ bspwm () {
 
 	sh $SCRIPTS/new-monit-setup
 
-	bash $SCRIPTS/wallpaperinit
+	wallpaperinit -set
 	bash $SCRIPTS/swap caps
 
 	# Set wmname for pycharm and other things
@@ -16,7 +16,7 @@ dwm () {
 	sxhkd &
 	compton &
 
-	bash $SCRIPTS/wallpaperinit
+	wallpaperinit -set
 	bash $SCRIPTS/swap caps
 }
 
@@ -26,7 +26,7 @@ sowm () {
 	xscreensaver &
 	redshift -P -O 3500 &
 
-	bash $SCRIPTS/wallpaperinit
+	wallpaperinit -set
 	bash $SCRIPTS/swap caps
 }
 
