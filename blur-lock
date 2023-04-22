@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 ls /tmp/wall.png && rm /tmp/wall.png
-scrot /tmp/wall.png
+scrot -z /tmp/wall.png
 file="/tmp/wall.png"
 convert -spread 12% $file $file
 i3lock -i $file "--insidecolor=0000001c" "--ringcolor=0000003e" \
