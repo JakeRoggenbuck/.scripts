@@ -3,13 +3,18 @@ bspwm () {
 	# Set wrokspaces
 	bspc monitor $(bspc query -M --names | head -n 1) -d 1 2 3 4 5 6 7 8 9 10
 
-	sh $SCRIPTS/new-monit-setup
+	sh $SCRIPTS/laptop-and-monit
 
 	wallpaperinit -set
 	bash $SCRIPTS/swap caps
 
 	# Set wmname for pycharm and other things
 	wmname LG3D
+}
+
+i3 () {
+	wallpaperinit -set
+	bash $SCRIPTS/swap caps
 }
 
 dwm () {
@@ -37,4 +42,6 @@ elif [ "$1" == "dwm" ]; then
 	dwm
 elif [ "$1" == "sowm" ]; then
 	sowm
+elif [ "$1" == "i3" ]; then
+	i3
 fi
